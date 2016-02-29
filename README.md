@@ -1,11 +1,11 @@
 # Getting Started
 
 1. Copy default.settings.php and make it settings.php. It should be writeable by Apache.
-2. Visit site and complete install process
+2. Setup a vhost for this site and visit to complete install process
 3. Back in command line-land, visit `docroot/files/config_***************` (where the asterisks is some random nonsense)
 4. Delete the `active` and `staging` folders
-5. Symlink `active` to `dev-active` in `repo-root/config`
-6. Symlink `staging` to `dev-staging` in `repo-root/config`
+5. Symlink `ln -s [repo-root]/config/dev-active active`
+6. Symlink `ln -s [repo-root]/config/dev-staging staging`
 7. Visit site and be awesome!
 
 # Installing drush for Backdrop
