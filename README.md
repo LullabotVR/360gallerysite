@@ -1,12 +1,13 @@
 # Getting Started
 
-1. Copy default.settings.php and make it settings.php. It should be writeable by Apache.
-2. Visit site and complete install process
-3. Back in command line-land, visit `docroot/files/config_***************` (where the asterisks is some random nonsense)
-4. Delete the `active` and `staging` folders
-5. Symlink `active` to `dev-active` in `repo-root/config`
-6. Symlink `staging` to `dev-staging` in `repo-root/config`
-7. Visit site and be awesome!
+* Copy `default.settings.php` to `settings.php`. It should be writeable by Apache.
+* Set your configuration variables to point to our repo's config directories:
+  * note: replace `/Users/sirkitree/repos/` with the location of your local clone
+```
+$config_directories['active'] = '/Users/sirkitree/repos/360gallerysite/config/kittens';
+$config_directories['staging'] = '/Users/sirkitree/repos/360gallerysite/config/puppies';
+```
+* Visit your site and complete the install process.
 
 # Installing drush for Backdrop
 
