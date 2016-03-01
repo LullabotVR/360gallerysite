@@ -20,10 +20,18 @@ https://github.com/backdrop-contrib/drush/issues
 # Moving config around
 Config is read/written directly to the config files, so the config files are always up to date when you make a change.
 
-If you'd like to move some config from local/dev to production:
-Find the changed file in `config/dev-active`, copy it to `config/prod-staging`
+The setup looks like this:
+```
+-----------------------------------------------
+| local site          | | prod site           |
+-----------------------------------------------
+|config               | | config              |
+|  puppies (staging)  | |   puppies (active)  |
+|  kittens (active)   | |   kittens (staging) |
+-----------------------------------------------
+```
 
-If you'd like to move some config from production to local/dev:
-Find the changed file in `config/prod-active`, copy it to `config/dev-staging`
-
-After you copy the file, commit it in git, push, pull on the other environment, then visit Configuration > Development > Configuration Management > Synchronize
+After you commit the files in `kittens` in git, 
+* push, 
+* pull on the other environment, 
+* then visit Configuration > Development > Configuration Management > Synchronize
