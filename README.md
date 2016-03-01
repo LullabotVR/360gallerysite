@@ -1,12 +1,13 @@
 # Getting Started
 
-1. Copy default.settings.php and make it settings.php. It should be writeable by Apache.
-2. Setup a vhost for this site and visit to complete install process
-3. Back in command line-land, visit `docroot/files/config_***************` (where the asterisks is some random nonsense)
-4. Delete the `active` and `staging` folders
-5. Symlink `ln -s [repo-root]/config/dev-active active`
-6. Symlink `ln -s [repo-root]/config/dev-staging staging`
-7. Visit site and be awesome!
+* Copy `default.settings.php` to `settings.php`. It should be writeable by Apache.
+* Set your configuration variables to point to our repo's config directories:
+  * note: replace `/Users/sirkitree/repos/` with the location of your local clone
+```
+$config_directories['active'] = '/Users/sirkitree/repos/360gallerysite/config/kittens';
+$config_directories['staging'] = '/Users/sirkitree/repos/360gallerysite/config/puppies';
+```
+* Visit your site and complete the install process.
 
 # Installing drush for Backdrop
 
@@ -19,10 +20,18 @@ https://github.com/backdrop-contrib/drush/issues
 # Moving config around
 Config is read/written directly to the config files, so the config files are always up to date when you make a change.
 
-If you'd like to move some config from local/dev to production:
-Find the changed file in `config/dev-active`, copy it to `config/prod-staging`
+The setup looks like this:
+```
+-----------------------------------------------
+| local site          | | prod site           |
+-----------------------------------------------
+|config               | | config              |
+|  puppies (staging)  | |   puppies (active)  |
+|  kittens (active)   | |   kittens (staging) |
+-----------------------------------------------
+```
 
-If you'd like to move some config from production to local/dev:
-Find the changed file in `config/prod-active`, copy it to `config/dev-staging`
-
-After you copy the file, commit it in git, push, pull on the other environment, then visit Configuration > Development > Configuration Management > Synchronize
+After you commit the files in `kittens` in git, 
+* push, 
+* pull on the other environment, 
+* then visit Configuration > Development > Configuration Management > Synchronize
