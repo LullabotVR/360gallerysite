@@ -1,3 +1,10 @@
+# What's all this?
+
+We've been having a hard time find a google app for viewing our own 360° photos in Google Cardboard. So we're building a site where you can upload your 360° photos and then view them easily.
+
+The back-end is [Backdrop](https://backdropcms.org).
+The front-end for viewing your gallery is [Aframe](https://aframe.io).
+
 # Getting Started
 
 * Copy `default.settings.php` to `settings.php`. It should be writeable by Apache.
