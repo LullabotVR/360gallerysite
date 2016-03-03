@@ -1,0 +1,46 @@
+{
+    "_config_name": "field.instance.node.photo.field_photo",
+    "field_name": "field_photo",
+    "entity_type": "node",
+    "bundle": "photo",
+    "label": "Photo",
+    "widget": {
+        "weight": "-4",
+        "type": "image_image",
+        "module": "image",
+        "active": 1,
+        "settings": {
+            "progress_indicator": "throbber",
+            "preview_image_style": "thumbnail"
+        }
+    },
+    "description": "",
+    "required": 1,
+    "deleted": 0,
+    "default_value": null,
+    "default_value_function": null,
+    "settings": {
+        "file_directory": "photos",
+        "file_extensions": "png gif jpg jpeg",
+        "max_filesize": "",
+        "max_resolution": "",
+        "min_resolution": "",
+        "alt_field": 0,
+        "title_field": 0,
+        "default_image": "",
+        "user_register_form": false
+    },
+    "display": {
+        "default": {
+            "label": "above",
+            "type": "image",
+            "settings": {
+                "image_style": "",
+                "image_link": "",
+                "image_float": ""
+            },
+            "module": "image",
+            "weight": 0
+        }
+    }
+}
