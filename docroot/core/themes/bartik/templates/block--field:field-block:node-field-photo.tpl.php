@@ -1,5 +1,5 @@
 
-<script src="https://aframe.io/releases/0.1.0/aframe.min.js"></script>
+<script src="https://aframe.io/releases/0.1.2/aframe.min.js"></script>
 <a-scene>
 
   <a-camera
