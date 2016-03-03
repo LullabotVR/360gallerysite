@@ -8,6 +8,14 @@
         "access comments",
         "post comments",
         "skip comment approval",
-        "use text format filtered_html"
+        "use text format filtered_html",
+        "create photo content",
+        "edit own photo content",
+        "delete own photo content",
+        "view own unpublished content",
+        "access content overview",
+        "create url aliases",
+        "search content",
+        "view the administration theme"
     ]
 }
