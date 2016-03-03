@@ -1,0 +1,20 @@
+{
+    "_config_name": "layout.menu_item.360",
+    "name": "360",
+    "title": "",
+    "path": "node/%/360",
+    "menu": {
+        "title": null,
+        "weight": 0,
+        "type": "none",
+        "name": "main-menu",
+        "parent": {
+            "title": null,
+            "weight": 0,
+            "type": "none",
+            "name": "main-menu"
+        }
+    },
+    "conditions": [],
+    "arguments": []
+}

@@ -72,3 +72,7 @@ function bartik_field__taxonomy_term_reference($variables) {
 
   return $output;
 }
+
+function bartik_preprocess_block(&$variables) {
+  // var_dump($variables);
+}
