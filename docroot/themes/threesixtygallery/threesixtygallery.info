@@ -1,0 +1,6 @@
+name = 360 Gallery Theme
+description = Our theme
+version = 0.1alpha
+type = theme
+backdrop = 1.x
+base theme = basis
