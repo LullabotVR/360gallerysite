@@ -4,3 +4,5 @@ version = 0.1alpha
 type = theme
 backdrop = 1.x
 base theme = basis
+
+stylesheets[all][] = css/style.css

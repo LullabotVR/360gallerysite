@@ -268,7 +268,7 @@
                     "options": []
                 },
                 "path": "frontpage",
-                "style_plugin": "default",
+                "style_plugin": "list",
                 "defaults": {
                     "style_plugin": false,
                     "style_options": false,
@@ -277,9 +277,12 @@
                 },
                 "style_options": {
                     "grouping": [],
-                    "row_class": "",
-                    "default_row_class": 0,
-                    "row_class_special": 0
+                    "row_class": "flex-gallery-item",
+                    "default_row_class": 1,
+                    "row_class_special": 1,
+                    "type": "ul",
+                    "wrapper_class": "",
+                    "class": "flex-gallery"
                 },
                 "row_plugin": "fields",
                 "row_options": {

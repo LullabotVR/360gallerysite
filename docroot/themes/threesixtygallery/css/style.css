@@ -1,0 +1,7 @@
+.view-frontpage .flex-gallery-item {
+  flex-grow: 0;
+}
+
+.view-frontpage img {
+  display: block;
+}
